@@ -3,11 +3,11 @@ package me.dio.domain.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import me.dio.domain.model.User;
+import me.dio.domain.model.Card;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface CardRepository extends JpaRepository<Card, String> {
 
-  boolean existsByAccountNumber(String accountNumber);
+  boolean existsByName(String name);
 
 }

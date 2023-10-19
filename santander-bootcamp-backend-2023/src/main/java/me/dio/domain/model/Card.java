@@ -1,44 +1,79 @@
 package me.dio.domain.model;
 
-import java.math.BigDecimal;
-
 import jakarta.persistence.*;
 
-@Entity(name = "tb_card")
+@Entity(name = "tb_carta")
 public class Card {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private Long id;
+  private String name;
 
-  @Column(unique = true)
-  private String number;
+  private int attack;
 
-  @Column(name = "available_limit", precision = 13, scale = 2)
-  private BigDecimal limit;
+  private int defense;
 
-  public Long getId() {
-    return id;
+  private String attribute;
+
+  private String race;
+
+  private String description;
+
+  private String artImageUrl;
+
+  public String getName() {
+    return name;
   }
 
-  public void setId(Long id) {
-    this.id = id;
+  public void setName(String name) {
+    this.name = name;
   }
 
-  public String getNumber() {
-    return number;
+  public int getAttack() {
+    return attack;
   }
 
-  public void setNumber(String number) {
-    this.number = number;
+  public void setAttack(int attack) {
+    this.attack = attack;
   }
 
-  public BigDecimal getLimit() {
-    return limit;
+  public int getDefense() {
+    return defense;
   }
 
-  public void setLimit(BigDecimal limit) {
-    this.limit = limit;
+  public void setDefense(int defense) {
+    this.defense = defense;
+  }
+
+  public String getAttribute() {
+    return attribute;
+  }
+
+  public void setAttribute(String attribute) {
+    this.attribute = attribute;
+  }
+
+  public String getRace() {
+    return race;
+  }
+
+  public void setRace(String race) {
+    this.race = race;
+  }
+
+  public String getDescription() {
+    return description;
+  }
+
+  public void setDescription(String description) {
+    this.description = description;
+  }
+
+  public String getArtImageUrl() {
+    return artImageUrl;
+  }
+
+  public void setArtImageUrl(String artImageUrl) {
+    this.artImageUrl = artImageUrl;
   }
 
 }
