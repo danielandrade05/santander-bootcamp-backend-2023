@@ -6,13 +6,14 @@ Voltada para armazenar cartas de diversos jogos em um banco de dados na nuvem.
 ## Diagrama de Classes (Domínio da API)
 
 ```mermaid
-classDiagram{
-    Card : +String name
-    Card : +int attack
-    Card : +int defense
-    Card : +String attribute
-    Card : +String race
-    Card : +String description
-    Card : +String artImageUrl
+classDiagram
+    class Card{
+    +String name
+    +int attack
+    +int defense
+    +String attribute
+    +String race
+    +String description
+    +String artImageUrl
     }
 ```    
