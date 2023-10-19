@@ -5,9 +5,7 @@ Voltada para armazenar cartas de diversos jogos em um banco de dados na nuvem.
 
 ## Diagrama de Classes (Domínio da API)
 
----
-title: Card example
----
+```mermaid
 classDiagram
     Card : +String name
     Card : +int attack
@@ -17,4 +15,4 @@ classDiagram
     Card : +String description
     Card : +String artImageUrl
     }
-   
+```    
