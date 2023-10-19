@@ -1,0 +1,38 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "prd",
+      "request": "launch",
+      "mainClass": "${file}",
+      "env": {
+        "SPRING_PROFILES_ACTIVE": "prd",
+        "PGDATABASE": "railway",
+        "PGHOST": "containers-us-west-166.railway.app",
+        "PGPASSWORD": "c7OnBBL2k01VqrZMZ4qk",
+        "PGPORT": "7322",
+        "PGUSER": "postgres"
+      }
+    },
+    {
+      "type": "java",
+      "name": "dev",
+      "request": "launch",
+      "mainClass": "${file}",
+      "env": {
+        "SPRING_PROFILES_ACTIVE": "dev"
+      }
+    },
+    {
+      "type": "java",
+      "name": "SantanderBootcampBackend2023Application",
+      "request": "launch",
+      "mainClass": "me.dio.SantanderBootcampBackend2023Application",
+      "projectName": "santander-bootcamp-backend-2023"
+    }
+  ]
+}
